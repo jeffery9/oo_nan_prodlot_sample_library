@@ -1,0 +1,90 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_prodlot_sample_library
+#
+# Guillem Barba <guillem@nan-tic.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-02-27 12:02+0000\n"
+"PO-Revision-Date: 2012-02-27 13:06+0100\n"
+"Last-Translator: Guillem Barba <guillem@nan-tic.com>\n"
+"Language-Team: Catalan <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: ca\n"
+"X-Generator: Lokalize 1.2\n"
+
+#. module: nan_prodlot_sample_library
+#: model:ir.model,name:nan_prodlot_sample_library.model_product_product
+msgid "Product"
+msgstr "Producte"
+
+#. module: nan_prodlot_sample_library
+#: help:res.company,requires_sample_library:0
+msgid ""
+"It defines the default value which will be used when a Product is created. "
+"Only the Product's field define the final behavior of its lots."
+msgstr ""
+"Defineix el comportament per defecte que es tindrà en compte al crear-se un "
+"nou producte. Només el camp al producte defineix el comportament final dels "
+"seus lots."
+
+#. module: nan_prodlot_sample_library
+#: field:res.company,requires_sample_library:0
+#: field:stock.production.lot,requires_sample_library:0
+#: field:stock.production.lot,requires_sample_library_ro:0
+msgid "Requires Sample Library"
+msgstr "Requereix mostra"
+
+#. module: nan_prodlot_sample_library
+#: model:ir.model,name:nan_prodlot_sample_library.model_res_company
+msgid "Companies"
+msgstr "Companyies"
+
+#. module: nan_prodlot_sample_library
+#: view:stock.production.lot:0
+msgid "Quality Control Triggers"
+msgstr "Disparadors de qualitat"
+
+#. module: nan_prodlot_sample_library
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Error! No podeu crear companyies recursives."
+
+#. module: nan_prodlot_sample_library
+#: model:ir.model,name:nan_prodlot_sample_library.model_stock_production_lot
+msgid "Production lot"
+msgstr "Lot de producció"
+
+#. module: nan_prodlot_sample_library
+#: view:stock.production.lot:0
+msgid "Get Sample"
+msgstr "Obté mostra"
+
+#. module: nan_prodlot_sample_library
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Codi EAN invàlid"
+
+#. module: nan_prodlot_sample_library
+#: field:stock.production.lot,sample_library_code:0
+msgid "Sample Library Code"
+msgstr "Codi mostra"
+
+#. module: nan_prodlot_sample_library
+#: sql_constraint:stock.production.lot:0
+msgid ""
+"The combination of serial number and internal reference must be unique !"
+msgstr ""
+"La combinació del número de serie i la referència interna ha de ser única!"
+
+#. module: nan_prodlot_sample_library
+#: view:stock.production.lot:0
+msgid "Waiting Sample"
+msgstr "Esperant mostra"
+
+

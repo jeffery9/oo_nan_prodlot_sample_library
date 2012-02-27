@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="act_pending_sample" model="workflow.activity">
+            <field name="wkf_id" ref="nan_prodlot_quality_control.wkf_prodlot"/>
+            <field name="name">pending_sample</field>
+            <field name="kind">function</field>
+            <field name="action">action_wofkflow_pending_sample()</field>
+            <field name="signal_send">subflow.pending_sample</field>
+        </record>
+        
+        
+        <!-- Transistion -->
+        <!-- Draft Output Transitions -->
+        <record id="nan_prodlot_quality_control.trans_draft_next_test" model="workflow.transition">
+            <field name="act_from" ref="nan_prodlot_quality_control.act_draft"/>
+            <field name="act_to" ref="nan_prodlot_quality_control.act_next_test"/>
+            <field name="condition">not test_pending_sample()</field>
+            <field name="signal">confirm</field>
+        </record>
+        
+        <record id="trans_draft_pending_sample" model="workflow.transition">
+            <field name="act_from" ref="nan_prodlot_quality_control.act_draft"/>
+            <field name="act_to" ref="act_pending_sample"/>
+            <field name="condition">test_pending_sample()</field>
+            <field name="signal">confirm</field>
+        </record>
+        
+        <!-- Pending Sample Output Transitions -->
+        <record id="trans_pending_sample_next_test" model="workflow.transition">
+            <field name="act_from" ref="act_pending_sample"/>
+            <field name="act_to" ref="nan_prodlot_quality_control.act_next_test"/>
+            <field name="condition">not test_pending_sample()</field>
+            <field name="signal">sample_get</field>
+        </record>
+    </data>
+</openerp>
