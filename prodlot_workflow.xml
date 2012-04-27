@@ -5,7 +5,7 @@
             <field name="wkf_id" ref="nan_prodlot_quality_control.wkf_prodlot"/>
             <field name="name">pending_sample</field>
             <field name="kind">function</field>
-            <field name="action">action_wofkflow_pending_sample()</field>
+            <field name="action">action_workflow_pending_sample()</field>
             <field name="signal_send">subflow.pending_sample</field>
         </record>
         

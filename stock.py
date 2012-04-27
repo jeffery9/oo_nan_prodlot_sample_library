@@ -108,7 +108,7 @@ class stock_production_lot( osv.osv ):
     
     
     # stock.production.lot
-    def action_wofkflow_pending_sample(self, cr, uid, ids, context=None):
+    def action_workflow_pending_sample(self, cr, uid, ids, context=None):
         self.write(cr, uid, ids, {'state': 'pending_sample'}, context)
         return True
     
