@@ -30,8 +30,8 @@
 {
     "name" : "Production Lot Quality Control - Sample Library",
     "version" : "1.0",
-    "author" : "NaN Projectes de Programari Lliure S.L.",
-    "category" : "Generic Modules/Quality Control",
+    "author" : "NaN·tic",
+    "category" : "Quality Control",
     "website": "http://www.nan-tic.com",
     "description": """
     Module developed for Trod y Avia, S.L.
@@ -41,6 +41,10 @@
     """,
     "depends" : [
         'nan_prodlot_quality_control'
+    ],
+    "images": [
+        "images/prodlot_sample.png",
+        "images/sample.png",
     ],
     "init_xml" : [],
     "update_xml" : [
