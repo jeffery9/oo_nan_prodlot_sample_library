@@ -5,7 +5,7 @@
             <field name="name">res.company.prodlot.sample_library.form</field>
             <field name="model">res.company</field>
             <field name="type">form</field>
-            <field name="inherit_id" ref="nan_prodlot_quality_control.company_prodlot_qc_form"/>
+            <field name="inherit_id" ref="oo_nan_prodlot_quality_control.company_prodlot_qc_form"/>
             <field name="arch" type="xml">
                 <field name="qc_template_trigger_ids" position="after">
                     <field name="requires_sample_library"/>

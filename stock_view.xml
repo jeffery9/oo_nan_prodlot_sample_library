@@ -6,7 +6,7 @@
             <field name="name">stock.production.lot.sample_library.form</field>
             <field name="model">stock.production.lot</field>
             <field name="type">form</field>
-            <field name="inherit_id" ref="nan_prodlot_quality_control.view_production_lot_qc_form" />
+            <field name="inherit_id" ref="oo_nan_prodlot_quality_control.view_production_lot_qc_form" />
             <field name="arch" type="xml">
                 <separator string="Quality Control Triggers" position="before">
                     <newline/>
@@ -27,7 +27,7 @@
             <field name="name">stock.production.lot.sample_library.filter</field>
             <field name="model">stock.production.lot</field>
             <field name="type">search</field>
-            <field name="inherit_id" ref="nan_prodlot_quality_control.search_product_lot_filter"/>
+            <field name="inherit_id" ref="oo_nan_prodlot_quality_control.search_product_lot_filter"/>
             <field name="arch" type="xml">
                 <filter name="inactive" position="after">
                     <separator orientation="vertical"/>

@@ -40,7 +40,7 @@
     Lots must to get a Sample Library to be Valid.
     """,
     "depends" : [
-        'nan_prodlot_quality_control'
+        'oo_nan_prodlot_quality_control'
     ],
     "images": [
         "images/prodlot_sample.png",
